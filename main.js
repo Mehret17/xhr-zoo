@@ -4,12 +4,22 @@ const printToDom = (domString, divId) => {
     document.getElementById(divId).innerHTML = domString;
 };
 // where the for loop goes and iterates and prints to Dom
+
+// the if statment to check if its cqrnivore or vegetable
 const domString = (fancyArray) => {
+
     let domString = "";
     fancyArray.forEach((animals) => {
-    domString += `<h1>${animals.name}</h1>`;
-    })
-printToDom(domString, 'card-holder')
+    domString += `<div class="animal"`;
+    domString +=    `<h1>${animals.name}</h1>`;
+    domString +=    `<h3>${animals.number}</h3>`;
+    domString +=    `<img class="animal-image" src="${animals.imageUrl}" alt="">`;
+    domString +=    `<div class="button-container">`;
+    domString +=      `<button>Escaped</button>`;
+    domString +=    `</div>`;
+    domString += `</div>`;
+    });
+printToDom(domString, 'zoo')
 };
 
 // change the json data to array and excute the function and passes it to the domString

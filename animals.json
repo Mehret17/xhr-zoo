@@ -1,0 +1,127 @@
+{
+  "animals":[
+    {
+        "name": "Blue Poison Array Frog",
+        "type":"Amphibian" ,
+        "number":"15",
+        "isCarnivore": true,
+        "imageUrl":"https://www.speakcdn.com/assets/2147/12_frogs.jpg"
+    },
+    {
+        
+        "name": "African Clawed Frog",
+        "type":"Amphibian" ,
+        "number":"10",
+        "isCarnivore": true,
+        "imageUrl":"https://www.speakcdn.com/assets/2147/12_african-clawed-frog-web.jpg"
+    },
+    {
+
+        "name": "Puerto Rican Crested Toad",
+        "type":"Amphibian" ,
+        "number":"5",
+        "isCarnivore": true,
+        "imageUrl":"https://www.speakcdn.com/assets/2147/12_prct.jpg"
+    },
+    {
+
+        "name": "Caribbean Flamingo",
+        "type":"Bird" ,
+        "number":"7",
+        "isCarnivore": true,
+        "imageUrl":"https://www.speakcdn.com/assets/2147/12_flamingo9.jpg"
+    },
+    {
+
+        "name": "Hyacinth Macaw",
+        "type":"Bird" ,
+        "number":"8",
+        "isCarnivore": false,
+        "imageUrl":"https://www.speakcdn.com/assets/2147/12_hyacinthmacaw3-sq.jpg"
+    },
+    {
+
+        "name": "Lorikeet",
+        "type":"Bird" ,
+        "number":"12",
+        "isCarnivore": false,
+        "imageUrl":"https://www.speakcdn.com/assets/2147/12_lorikeet8.jpg"
+    },
+
+    {
+
+        "name": "Blue Discus",
+        "type":"Fish" ,
+        "number":"7",
+        "isCarnivore": true,
+        "imageUrl":"https://www.speakcdn.com/assets/2147/12_discus-web.jpg"
+    },
+    {
+
+        "name": "Bluehead Wrasse",
+        "type":"Fish" ,
+        "number":"20",
+        "isCarnivore": true,
+        "imageUrl":"https://www.speakcdn.com/assets/2147/12_bluehead-wrasse-web.jpg"
+    },
+    {
+
+        "name": "LionFish",
+        "type":"Fish" ,
+        "number":"22",
+        "isCarnivore": true,
+        "imageUrl":"https://www.speakcdn.com/assets/2147/12_lionfish1.jpg"
+    },
+
+    {
+
+        "name": "Alpaca",
+        "type":"mammals" ,
+        "number":"8",
+        "isCarnivore": true,
+        "imageUrl":"https://www.speakcdn.com/assets/2147/12_alpaca1.jpg"
+    },
+    {
+
+        "name": "Belted Galloway",
+        "type":"mammals" ,
+        "number":"17",
+        "isCarnivore": false,
+        "imageUrl":"https://www.speakcdn.com/assets/2147/12_belted-galloway-web9.jpg"
+    },
+    {
+
+        "name": "Bontebok",
+        "type":"mammals" ,
+        "number":"12",
+        "isCarnivore": false,
+        "imageUrl":"https://www.speakcdn.com/assets/2147/12_bontebok-sq.jpg"
+    },
+
+    {
+
+        "name": "Aldabra Tortoise",
+        "type":"reptiles" ,
+        "number":"3",
+        "isCarnivore": false,
+        "imageUrl":"https://www.speakcdn.com/assets/2147/12_koraline_-_aldabra_-_katie_gregory.jpg"
+    },
+    {
+
+        "name": "American Snapping Turtle",
+        "type":"reptiles" ,
+        "number":"13",
+        "isCarnivore": false,
+        "imageUrl":"cdn.com/assets/2147/12_alligator-snapping-turtle.jpg"
+    },
+    {
+
+        "name": "Caiman LIzard",
+        "type":"reptiles" ,
+        "number":"10",
+        "isCarnivore": true,
+        "imageUrl":"https://www.speakcdn.com/assets/2147/12_bontebok-sq.jpg"
+    }
+
+    ]
+}

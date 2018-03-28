@@ -71,13 +71,30 @@ const showCarnivore = () => {
         carnivores[j].classList.add('red');
     }
 };
+
+//issue#7
+const initializeEatMeButtons = () => {
+    const eatMeButtons = document.getElementsByClassName('eat-me');
+    for (let n=0; n<eatMeButtons.length; n++) {
+        eatMeButtons[n].addEventListener('click', itsAlreadyBeenTaken)
+    }
+}
+
+const itsAlreadyBeenTaken = (e) => {
+   // put the debugger to see which event it is
+   const currentNumber = e.target.parentNode.parentNode.children[1].innerHTML;
+   const newNumber = currentNumber*1 -1; // to change the number retrieved from string to number
+   e.target.parentNode.parentNode.children[1].innerHTML = newNumber;
+}
+
 // changes the cards to green and add Eat me button issue #5
 const showVegetable = () => {
     const vegetable = document.getElementsByClassName('vegetable');
     for (let k=0; k<vegetable.length; k++) {
-        vegetable[k].children[3].innerHTML =`<button>EAT ME!!!</button>`;
+        vegetable[k].children[3].innerHTML =`<button class="eat-me">EAT ME!!!</button>`;
         vegetable[k].classList.add('green');
     }
+    initializeEatMeButtons();
 };
 
 // change the json data to array and excute the function and passes it to the domString

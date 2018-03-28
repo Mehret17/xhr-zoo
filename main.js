@@ -27,12 +27,31 @@ printToDom(domString, 'zoo')
 };
 
 
-const animalsEscaped =() => { console.log(animalsEscaped);
+const animalsEscaped = e => { console.log(animalsEscaped);
+    const badAnimalButtonContainer = e.target.parentNode; // to get the card of the button
     showCarnivore();
     showVegetable();
+    showFoundButton(badAnimalButtonContainer);
+}
+//issue #6
+const showFoundButton = (buttonContainer)  => {
+   buttonContainer.innerHTML =`<button id="found">Found</button>`;
+    initializeFoundButton ()
 }
 
-//issue #5
+const initializeFoundButton = () => {
+    const foundButton = document.getElementById("found");
+    foundButton.addEventListener("click", () => {
+      const animals = document.getElementsByClassName ('animal');
+       for (let m=0; m<animals.length; m++ ) {
+           animals[m].children[3].innerHTML =`<button class="escaped">ESCAPED</button>`;
+           animals[m].classList.remove("red");
+           animals[m].classList.remove("green");
+       }
+       addEventListeners();
+    });
+}
+//issue #5 
 const addEventListeners = () => {
    const escapedButtons = document.getElementsByClassName('escaped');
    console.log (escapedButtons);
@@ -43,7 +62,7 @@ const addEventListeners = () => {
 };
 
 
-//takes out the escaped button and add red for the carnivores 
+//takes out the escaped button and add red for the carnivores issues #5
 const showCarnivore = () => {
     const carnivores = document.getElementsByClassName('carnivore');
     console.log (carnivores); 
@@ -52,7 +71,7 @@ const showCarnivore = () => {
         carnivores[j].classList.add('red');
     }
 };
-
+// changes the cards to green and add Eat me button issue #5
 const showVegetable = () => {
     const vegetable = document.getElementsByClassName('vegetable');
     for (let k=0; k<vegetable.length; k++) {
